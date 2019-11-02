@@ -5,13 +5,17 @@
   
 
   
-  <title>Archives: 2019 | Hexo</title>
+  <title>让终端走代理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="当我们用终端使用git，或者下载源在境外的软件时往往非常慢，如果读者使用的是ssr或vmess等工具的话，就可在bashrc中修改配置，让终端也可以走代理。 $gedit .bashrc #打开.bashrc 在最下方输入以下两行指令 $alias setproxy=”export ALL_PROXY=socks5:&#x2F;&#x2F;127.0.0.1:1080”$alias unsetproxy=”unset">
+<meta name="keywords" content="linux问题解决">
+<meta property="og:type" content="article">
+<meta property="og:title" content="让终端走代理">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="当我们用终端使用git，或者下载源在境外的软件时往往非常慢，如果读者使用的是ssr或vmess等工具的话，就可在bashrc中修改配置，让终端也可以走代理。 $gedit .bashrc #打开.bashrc 在最下方输入以下两行指令 $alias setproxy=”export ALL_PROXY=socks5:&#x2F;&#x2F;127.0.0.1:1080”$alias unsetproxy=”unset">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-02T15:48:20.549Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,59 +63,60 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/11/02/%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86/" class="archive-article-date">
-  <time datetime="2019-11-02T15:40:21.000Z" itemprop="datePublished">Nov 2</time>
+        <section id="main"><article id="post-让终端走代理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/02/%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86/" class="article-date">
+  <time datetime="2019-11-02T15:40:21.000Z" itemprop="datePublished">2019-11-02</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/02/%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86/">让终端走代理</a>
+    <h1 class="article-title" itemprop="name">
+      让终端走代理
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/11/02/hello-world/" class="archive-article-date">
-  <time datetime="2019-11-02T15:03:50.218Z" itemprop="datePublished">Nov 2</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/02/hello-world/">Hello World</a>
-    </h1>
-  
+        <p>当我们用终端使用git，或者下载源在境外的软件时往往非常慢，如果读者使用的是ssr或vmess等工具的话，就可在bashrc中修改配置，让终端也可以走代理。</p>
+<p>$gedit .bashrc #打开.bashrc</p>
+<p>在最下方输入以下两行指令</p>
+<p>$alias setproxy=”export ALL_PROXY=socks5://127.0.0.1:1080”<br>$alias unsetproxy=”unset ALL_PROXY”</p>
+<p>其中alias是改命令的别称，以后每次在终端输入setproxy，就相当于是输入”export　ALL_PROXY=socks5://127.0.0.1:1080” 。</p>
+<p>$source ~/.bashrc　#记得每次用完bashrc都要source一下。</p>
+<p>往后需要使用终端代理时　只要输入setproxy, 不用时关掉即可。</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/02/%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86/" data-id="ck2hqr8b90001k8e28pfdg909" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" rel="tag">linux问题解决</a></li></ul>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/11/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
